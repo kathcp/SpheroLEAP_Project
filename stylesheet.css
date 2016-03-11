@@ -1,0 +1,153 @@
+body {
+	background-color: #F8F8FF;
+}
+
+#selectButton {
+  margin-top: 20px;
+  margin-right: 5px;
+  float: left;
+}
+
+#spheroAddress {
+  margin-top: 20px;
+  margin-left: 5px;
+  display: block;
+}
+
+.topButtons {
+  margin-left: 2px;
+  margin-top: 25px;
+  height: 40px;
+}
+
+#main {
+  margin-left: 10%;
+}
+
+#top {
+  background-color: #E8E8E8;
+  border: 1px solid #F5F5F5;
+  width: 100%;
+  height: 120px;
+}
+
+/* defines the labels above the arrows */
+h3 {
+  display: inline-block;
+  font-family: Verdana;
+  font-size: 30px;
+  padding-left: 8em;
+}
+
+#label {
+  display: block;
+  height: 60px;
+  width: 800px;
+}
+
+/* class of all div directions */
+body div div {
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}
+
+/* Div contents all buttons */
+.content {
+	height: 300px;
+	width: 200px;
+  border: none;
+  margin: 40px 0px 0px 0px ;
+}
+
+/* Div Forward button and Back button*/
+.centerArrows {
+  width: 200px;
+  height: 150px;
+  background-color: #CFCFCF;
+}
+
+/* Div Left button and right button*/
+.sideArrows {
+  border-radius: 5%;
+  width: 150px;
+  height: 200px;
+  background-color: #CFCFCF;
+}
+
+/* Div to left side */
+#LEFT {
+  display: block;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+/* Div to right side */
+#RIGHT {
+  display: block;
+  margin-top: 50px;
+}
+
+/*Dialog box*/
+#dialog{
+  position:absolute;
+  top: 25%;
+  left: 25%;  
+  border: 1px solid black;
+  background: #FFFFF0;
+  height: 200px;
+  width: 200px;
+}
+
+#dialogTitle{
+  display: block;
+  border-bottom: 1px solid black; 
+  font-size: 24px;
+  top: 10px; 
+  padding: 10px;
+  width: 480px;
+  height: 25px;
+}
+
+#closeDialogButton{
+  color: black;
+  position:absolute; 
+  right: 10px; 
+  top: 3px; 
+  height: 22px; 
+  width:22px; 
+  padding: 0px;
+  cursor: pointer;
+}
+
+#dialogBody{
+  display: block;
+  padding-left: 10px;
+  height: 100px;
+  width: 200px;
+  font-size: 20px;
+}
+
+#dialogButton{
+  position:absolute; 
+  right: 25px; 
+  bottom: 10px; 
+  width: 130px;
+  height: 30px;
+  text-align: center;
+  font-size: 24px;
+  padding: 3px;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: #EEE5DE;
+}
+
+table, th, td {
+  border: 1px dashed black;
+  border-collapse: collapse;
+}
+
+th,td{
+  min-width: 130px;
+  padding: 3px;
+}

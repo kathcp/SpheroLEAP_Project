@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--
+/-----------------------------------------------------------------\
+| Author: Kathleen C Pereira                                      |
+| Date: 05/26/2015                                                |
+| E-mail: kcpereira@ua-net.ua.edu                                 |
+| Test a module to track movement.                                |
+| Research conducted by University of Alabama, Tuscaloosa         |  
+| Professor: Jeff Gray                                            |
+\-----------------------------------------------------------------/
+-->
+<meta name="robots" content="noindex">
+<html>
+<head>
+    <script type="text/javascript" src="Spherly/bin/www/jquery.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/Sphero.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/blockly/blockly_compressed.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/blockly/javascript_compressed.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/blockly/blocks_compressed.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/sphero_blocks.js"></script>
+    <!--default to english language-->
+    <script type="text/javascript" src="Spherly/bin/www/msg/js/en.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/msg/spherly/en.js"></script>
+    <!--end language script srcs-->
+    <script type="text/javascript" src="Spherly/bin/www/runblockly.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/language.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/runblockly_program_execution.js"></script>
+    <script type="text/javascript" src="Spherly/bin/www/runblockly_utils.js"></script>
+    <!--LEAP script srcs-->
+    <script src="http://js.leapmotion.com/leap-0.6.4.min.js"></script>    
+    <script type="text/javascript" src="Spherly/bin/www/LEAPControl.js"></script>	
+	<title>Track directions - Test</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css"/> 
+</head>
+<body>
+  <div id="top">
+    <button onclick="tryTo(SpheroManager.selectSphero)" id="selectButton" >Select Address</button>
+    <input type="text" id="spheroAddress" value="00:06:66:4B:9F:D7">
+    <button onclick="tryTo(SpheroManager.connect)" class="topButtons" id="connectButton" >Connect</button>
+    <button onclick="tryTo(SpheroManager.disconnect)" class="topButtons" id="disconnectButton" >Disconnect</button>
+    <button onclick="tryTo(SpheroManager.sleep)" class="topButtons" id="sleepButton" >Sleep</button>
+  </div>  
+  <div id="main">
+    
+    <div id="label">
+      <h3>Direction</h3>
+      <h3 style="padding-left: 8.5em;">Speed</h3>
+    </div>
+
+    <div class="content">
+      <img src="img/LEFT.png" class="sideArrows" id="LEFT"/>
+    </div>
+  	<div  class="content"> 
+      <img src="img/FORWARD.png" class="centerArrows" id="FORWARD"/>
+      <img src="img/BACK.png" class="centerArrows" id="BACK"/>
+    </div>
+    <div class="content"> 
+      <img src="img/RIGHT.png" class="sideArrows" id="RIGHT"/>   
+    </div>
+    <div  class="content"> 
+        <img src="img/UP.png" class="centerArrows" id="UP"/>
+        <img src="img/DOWN.png" class="centerArrows" id="DOWN"/>
+    </div>
+  </div>
+
+      <div id="dialog" style="display:none;">
+      <div id="dialogTitle">
+        <span id="titleText"></span>
+        <div id="closeDialogButton" title="Close the dialog"> X </div>
+      </div>
+      <div id="dialogBody"></div>
+    </div>
+
+  <script type="text/javascript">
+      Blockly.inject(document.getElementById('blocklyDiv'), {path: 'Spherly/bin/www/blockly/', toolbox: document.getElementById('toolbox')});
+  </script>
+
+</script>
+</body>
+
+</html>
